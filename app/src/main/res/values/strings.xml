@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SomeOne|+1</string>
+    <string name="title_activity_all_locations22">MAP</string>
+    <string name="title_activity_all_locations">Map</string>
+    <string name="title_activity_add_location">Map</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+</resources>

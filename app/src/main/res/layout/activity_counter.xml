@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorOrange"
+    android:layout_height="match_parent"
+    tools:context=".Counter">
+
+    <LinearLayout
+        android:id="@+id/titleHead"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="  &lt;   Create Counter"
+            android:onClick="goBack2"
+            android:textColor="#FFF"
+            android:textSize="32sp"
+            app:fontFamily="@font/fredoka_one" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_below="@id/titleHead"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/yantramanav_bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:text="Add Title" />
+
+
+    <EditText
+        android:layout_below="@+id/titleTv"
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:background="@drawable/bginputtask"
+        android:paddingLeft="12dp"
+        android:textColorHint="#B5B5B5"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="What is your event name ? "
+
+        android:text="" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/addAboutTv"
+        android:layout_below="@id/edtTitle"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/yantramanav_bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add About" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_below="@id/addAboutTv"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:background="@drawable/bginputtask"
+        android:paddingLeft="12dp"
+        android:textColorHint="#B5B5B5"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Add About your event"
+        android:layout_width="match_parent"
+        android:text="" />
+
+    <TextView
+
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/edtDesc"
+        android:id="@+id/setDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/yantramanav_bold"
+        android:textSize="20sp"
+        android:text="Set Date" />
+
+    <DatePicker
+        android:layout_below="@id/setDateTv"
+        android:id="@+id/simpleDatePicker"
+        android:calendarViewShown="false"
+        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-30dp"
+        android:calendarTextColor="@color/colorOrange"
+        android:backgroundTint="@color/colorWhite"
+        android:background="@color/colorWhite"
+        android:datePickerMode="spinner"
+        />
+
+
+    <View
+        android:id="@+id/dividerT"
+        android:layout_below="@id/simpleDatePicker"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_below="@id/dividerT"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/yantramanav_bold"
+                android:textSize="20sp"
+                android:text="In terms of : " />
+
+            <RadioGroup
+
+                android:layout_marginLeft="16dp"
+                android:id="@+id/rgCal"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="true"
+                    android:text="Months"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/weeks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weeks"
+                    android:textSize="14dp"
+
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"/>
+                <RadioButton
+                    android:id="@+id/days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textSize="14dp"
+
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"/>
+
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="end"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/yantramanav_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:text="Date Set to"  />
+
+            <TextView
+                android:id="@+id/dateDetails"
+                android:layout_gravity="end"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/yantramanav_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:text="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnApplyWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE AS WIDGET"
+        style="@style/SBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="applyWidget"/>
+
+</RelativeLayout>

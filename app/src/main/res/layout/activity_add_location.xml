@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorOrange"
+    tools:context=".AddLocation">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <RelativeLayout
+        android:layout_height="300sp"
+        android:layout_width="match_parent"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tV"
+            android:inputType="text"
+            android:background="@drawable/bginputtask"
+            android:paddingLeft="12dp"
+            android:textColorHint="#B5B5B5"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:hint="Where are you now?"
+            />
+
+        <Button
+            android:id="@+id/addLoc"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tV"
+            android:textSize="20dp"
+            android:enabled="false"
+            style="@style/SBtn"
+            android:onClick="addLocation"
+
+
+
+            android:text="ADD LOCATION"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

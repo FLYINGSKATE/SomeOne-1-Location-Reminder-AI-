@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/InterViewL"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorOrange"
+    tools:context=".InterviewScreen">
+
+  <TextView
+      android:id="@+id/tvCareBot"
+      style="@style/BotSays"
+      android:text="Please wait..."
+      android:layout_marginTop="20pt"
+      android:textSize="14pt" />
+
+  <pl.droidsonroids.gif.GifImageView
+      android:id="@+id/firstgif"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/first"
+      android:visibility="invisible"
+      android:layout_gravity="center_vertical|center"
+      />
+
+  <TextView
+      android:id="@+id/tvHumanSays"
+      style="@style/BotSays"
+      android:text=""
+      android:textSize="14pt"
+      android:layout_gravity="center"
+      android:layout_marginTop="120pt"
+
+      />
+
+
+
+
+
+
+
+</LinearLayout>

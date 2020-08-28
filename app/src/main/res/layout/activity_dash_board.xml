@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrange"
+    android:orientation="vertical"
+    tools:context=".DashBoard">
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:onClick="goToBack"
+        android:text="&lt;"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp" />
+
+    <ListView
+        android:divider="@android:color/transparent"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        style="@style/scrollbar_bitmap_style"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

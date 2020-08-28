@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorOrange"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Welcome"
+        style="@style/BotSays"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeStepGranularity="2sp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="30dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeStepGranularity="2sp"
+        android:text=""
+        android:id="@+id/hsay"
+        android:textSize="30dp"
+        android:layout_below="@+id/floatingActionButton"
+        style="@style/BotSays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="bottom|center"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:onClick="takeMetoDashBoard"
+        app:backgroundTint="@color/colorOrange"
+        app:fabCustomSize="70sp"
+        app:maxImageSize="70sp"
+        app:srcCompat="@drawable/concentric_circle" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        app:fabCustomSize="200sp"
+        app:maxImageSize="140sp"
+        android:clickable="true"
+        android:onClick="listenToMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:backgroundTint="@color/colorOrange"
+        app:srcCompat="@drawable/concentric_circle2" />
+
+
+</RelativeLayout>
